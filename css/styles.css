@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    src: local('Abril Fatface'),
+        url('../assets/fonts/Abril_Fatface/AbrilFatface-Regular.ttf')
+            format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    background: radial-gradient(
+        circle at calc((100vw - min(100dvmin, 1000px)) / 2)
+            calc((100dvh - min(100dvmin, 1000px)) / 2),
+        oklch(70% 0.05 350),
+        oklch(60% 0.1 320)
+    );
+    line-height: 1.5;
+}
+
+#card {
+    position: fixed;
+    width: min(100dvmin, 1000px);
+    height: min(100dvmin, 1000px);
+    top: calc((100dvh - min(100dvmin, 1000px)) / 2);
+    left: calc((100vw - min(100dvmin, 1000px)) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+        circle at left top,
+        oklch(80% 0.05 350),
+        oklch(70% 0.1 320)
+    );
+    box-shadow: 0.2px 0.2px 0.3px hsl(290deg 24% 31% / 0.27),
+        0.7px 0.8px 1.2px -0.3px hsl(290deg 24% 31% / 0.27),
+        1.3px 1.4px 2.1px -0.6px hsl(290deg 24% 31% / 0.27),
+        2px 2.1px 3.3px -0.8px hsl(290deg 24% 31% / 0.27),
+        2.9px 3.1px 4.8px -1.1px hsl(290deg 24% 31% / 0.27),
+        4.1px 4.5px 6.8px -1.4px hsl(290deg 24% 31% / 0.27),
+        5.9px 6.4px 9.8px -1.7px hsl(290deg 24% 31% / 0.27),
+        8.2px 8.9px 13.6px -1.9px hsl(290deg 24% 31% / 0.27),
+        11.3px 12.3px 18.8px -2.2px hsl(290deg 24% 31% / 0.27),
+        15.2px 16.6px 25.3px -2.5px hsl(290deg 24% 31% / 0.27);
+    color: oklch(30% 0.05 320 / 0.75);
+}
+
+#card #title {
+    position: absolute;
+    width: calc(min(100dvmin, 1000px) - 4rem);
+    top: 2rem;
+    left: 2rem;
+    font-size: clamp(2rem, calc(1rem + 5dvmin), 6rem);
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#card #equation {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, calc(0.5rem + 1.5dvmin), 2rem);
+    transform: rotate(-5deg) scale(0.99);
+}
