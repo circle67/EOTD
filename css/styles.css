@@ -1,8 +1,11 @@
 @font-face {
     font-family: 'Henny Penny';
-    src: local('Henny Penny'),
-        url('assets/fonts/Henny_Penny/HennyPenny-Regular.ttf')
-            format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    src: local('Henny Penny Regular'),
+        local('HennyPenny-Regular'),
+        url('../assets/fonts/Henny_Penny/HennyPenny-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 html {
