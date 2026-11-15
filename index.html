@@ -3,15 +3,60 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Equation of the Day</title>
+        <title>Harrison's Equation of the Day</title>
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
         <div id="card">
             <h1 id="title">Harrison's Equation of the Day</h1>
             <div id="equation">
-                $$\operatorname{erf}z=\frac{2}{\sqrt\pi}\int_{0}^{z}e^{-t^2}\,\mathrm
-                dt$$
+                <math display="block">
+                    <mover>
+                        <mi mathvariant="normal" style="font-weight: bold;">a</mi>
+                        <mo>→</mo>
+                    </mover>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mo form="prefix" lspace="0.16666666666666666em" rspace="0">D</mo>
+                            <mover>
+                                <mi mathvariant="normal" style="font-weight: bold;">V</mi>
+                                <mo>→</mo>
+                            </mover>
+                        </mrow>
+                        <mrow>
+                            <mo form="prefix" lspace="0.16666666666666666em" rspace="0">D</mo>
+                            <mi>t</mi>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mo>∂</mo>
+                            <mover>
+                                <mi mathvariant="normal" style="font-weight: bold;">V</mi>
+                                <mo>→</mo>
+                            </mover>
+                        </mrow>
+                        <mrow>
+                            <mo>∂</mo>
+                            <mi>t</mi>
+                        </mrow>
+                    </mfrac>
+                    <mo>+</mo>
+                    <mo>(</mo>
+                    <mover>
+                        <mi mathvariant="normal" style="font-weight: bold;">V</mi>
+                        <mo>→</mo>
+                    </mover>
+                    <mo>⋅</mo>
+                    <mo>∇</mo>
+                    <mo>)</mo>
+                    <mover>
+                        <mi mathvariant="normal" style="font-weight: bold;">V</mi>
+                        <mo>→</mo>
+                    </mover>
+                </math>
             </div>
         </div>
     </body>
