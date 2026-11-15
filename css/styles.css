@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Henny Penny';
     src: local('Henny Penny'),
-        url('../assets/fonts/Henny_Penny/HennyPenny-Regular.ttf')
+        url('/assets/fonts/Henny_Penny/HennyPenny-Regular.ttf')
             format('truetype');
 }
 
